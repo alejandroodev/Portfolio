@@ -1,0 +1,18 @@
+{
+  "id": "mig_cmsjcjt4u6moinuv9h40",
+  "parentID": "mig_cmsjca787bhkphf1mlb0",
+  "checksum": "1:d2cf5ffc5ddb79c7191722aca76d0168370ac64e87e3b3c0d14876bea164e928",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "N/A"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

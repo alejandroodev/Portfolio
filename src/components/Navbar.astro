@@ -1,0 +1,73 @@
+---
+
+---
+
+<nav class="navbar relative flex items-center bg-transparent w-full h-16 px-28">
+    <div class="px-5 py-2 w-fit">
+        <a class="transition-all" href="#">Inicio</a>
+    </div>
+
+    <div class="px-5 py-2 w-fit">
+        <a class="transition-all" href="#projects">Proyectos</a>
+    </div>
+</nav>
+
+<script>
+
+</script>
+
+<style lang="scss">
+  .navbar {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: #d7d7d7;
+    font-size: 20px;
+    a {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        background: white;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0;
+        animation-name: default-bottom-line;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+        box-shadow: 0 0 5px rgba(255,255,255);
+      }
+
+      &:hover {
+        color: #fff;
+
+
+        &:before {
+          animation-name: bottom-line;
+          animation-duration: .2s;
+          animation-fill-mode: forwards;
+        }
+      }
+    }
+  }
+
+  @keyframes default-bottom-line {
+    0% {
+      width: 60%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes bottom-line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+</style>

@@ -1,4 +1,6 @@
 ---
+import '@fontsource/outfit';
+
 interface Props {
 	title: string;
 }
@@ -20,7 +22,16 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
+<script lang="ts">
+	gsap.registerPlugin(ScrollSmoother)
+</script>
+
 <style is:global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -32,10 +43,17 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
+
+
 	html {
+		min-height: 100vh;
+		min-width: 100vh;
 		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		box-sizing: border-box;
+
+	}
+	body {
+		@apply bg-gradient-to-t from-neutral-900 to-neutral-800 h-full;
 	}
 	code {
 		font-family:

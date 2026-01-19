@@ -1,0 +1,19 @@
+{
+  "id": "mig_cmsjd8d4u6moinuv9h7g",
+  "parentID": "mig_cmsjd4t4u6moinuv9h6g",
+  "checksum": "1:8d88fedcd94ece1ecf8af69c3e72ea844d35fc5bb8ff9eb1e80e472eb441faae",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tags",
+          "type": "link",
+          "link": {
+            "table": "projects_tags"
+          }
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}
